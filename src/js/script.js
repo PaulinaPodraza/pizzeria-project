@@ -1,4 +1,4 @@
-
+/* global Handlebars, utils, dataSource */ // eslint-disable-line no-unused-vars
 {
   'use strict';
   const select = {
@@ -386,7 +386,7 @@
         thisCart.totalPrice = 0;
         thisCart.deliveryFee = 0;
         for(let price of thisCart.dom.totalPrice){
-          price.innerHTML = 0;
+          price.innerHTML = thisCart.totalPrice;
         }
       }  else {
         thisCart.totalPrice = thisCart.subTotalPrice + thisCart.deliveryFee;
