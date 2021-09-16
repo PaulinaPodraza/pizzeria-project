@@ -50,7 +50,6 @@ class CartProduct {
     thisCartProduct.dom.remove.addEventListener('click', function(event){
       event.preventDefault();
       thisCartProduct.remove();
-      console.log(thisCartProduct.remove);
     });
   }
   getData() {

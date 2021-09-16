@@ -57,7 +57,7 @@ class Cart {
     thisCart.totalNumber = 0;
     thisCart.subTotalPrice = 0;
     for(let product of thisCart.products){
-      thisCart.totalNumber += product.amount; 
+      thisCart.totalNumber += product.amount;
       thisCart.subTotalPrice += product.price;
     }
     if (thisCart.totalNumber === 0) {
@@ -73,8 +73,8 @@ class Cart {
       }
     }
     thisCart.dom.totalNumber.innerHTML = thisCart.totalNumber;
-    thisCart.dom.subTotalPrice.innerHTML = thisCart.subTotalPrice;   
-    thisCart.dom.deliveryFee.innerHTML = thisCart.deliveryFee;    
+    thisCart.dom.subTotalPrice.innerHTML = thisCart.subTotalPrice;
+    thisCart.dom.deliveryFee.innerHTML = thisCart.deliveryFee;
   }
   remove(cartProduct){
     const thisCart = this;
