@@ -3,12 +3,14 @@ export const select = {
     menuProduct: '#template-menu-product',
     cartProduct: '#template-cart-product',
     bookingWidget: '#template-booking-widget',
+    homePage: '#template-home-page',
   },
   containerOf: {
     menu: '#product-list',
     cart: '#cart',
     pages: '#pages',
     booking: '.booking-wrapper',
+    home: '.home-wrapper',
   },
   all: {
     menuProducts: '#product-list > .product',
@@ -38,6 +40,16 @@ export const select = {
       input: 'input[type="range"]',
       output: '.output',
     },
+    dataFlickity: {
+      wrapper: '.main-carousel',
+      cellAlign: 'left',
+      contain: 'true',
+    },
+    home: {
+      head: '.head',
+      order: '.order-online',
+      book: '.book-table',
+    },
   },
   cart: {
     productList: '.cart__order-summary',
@@ -63,6 +75,7 @@ export const select = {
     tables: '.floor-plan .table',
     form: '.booking-form',
     starters: '[name="starter"]',
+    floorPlan: '.floor-plan',
   },
   nav: {
     links: '.main-nav a',
@@ -80,6 +93,8 @@ export const classNames = {
     loading: 'loading',
     tableBooked: 'booked',
     tableSelected: 'selected',
+    table: 'table',
+    selected: 'selected',
   },
   nav: {
     active: 'active',
@@ -123,4 +138,5 @@ export const templates = {
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
   cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
   bookingWidget: Handlebars.compile(document.querySelector(select.templateOf.bookingWidget).innerHTML),
+  homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
 };
