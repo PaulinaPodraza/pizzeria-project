@@ -76,6 +76,8 @@ export const select = {
     form: '.booking-form',
     starters: '[name="starter"]',
     floorPlan: '.floor-plan',
+    phone: '[name="phone"]',
+    address: '[name="address"]',
   },
   nav: {
     links: '.main-nav a',
